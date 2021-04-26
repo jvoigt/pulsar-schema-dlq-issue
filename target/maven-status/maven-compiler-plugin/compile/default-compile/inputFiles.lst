@@ -1,0 +1,5 @@
+/home/j.voigt/Workspace/kata/pulsar-schema-dlq-issue/src/main/java/com/jvoigt/issue/MyListener.java
+/home/j.voigt/Workspace/kata/pulsar-schema-dlq-issue/src/main/java/com/jvoigt/issue/Payload.java
+/home/j.voigt/Workspace/kata/pulsar-schema-dlq-issue/src/main/java/com/jvoigt/issue/BrokenAvroExample.java
+/home/j.voigt/Workspace/kata/pulsar-schema-dlq-issue/src/main/java/com/jvoigt/issue/WorkingExample.java
+/home/j.voigt/Workspace/kata/pulsar-schema-dlq-issue/src/main/java/com/jvoigt/issue/BrokenJsonExample.java
