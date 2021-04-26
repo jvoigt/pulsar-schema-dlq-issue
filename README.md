@@ -19,5 +19,5 @@ $ docker run -it \
 And run the project with mvn compile exec:java -Dexec.mainClass="com.jvoigt.issue.WorkingExample"
 
 ```
-$ mvn compile exec:java -Dexec.mainClass="com.jvoigt.issue.WorkingExample"
+mvn compile exec:java -Dexec.mainClass="com.jvoigt.issue.BrokenJsonExample" > brokenjson.log 2>&1
 ```

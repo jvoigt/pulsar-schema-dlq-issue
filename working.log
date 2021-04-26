@@ -1,0 +1,345 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/usr/share/maven/lib/guice.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------< [0;36mcom.jvoigt.issue:pulsar-schema-dlq-issue[0;1m >--------------[m
+[[1;34mINFO[m] [1mBuilding pulsar-schema-dlq-issue 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.0.2:resources[m [1m(default-resources)[m @ [36mpulsar-schema-dlq-issue[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/j.voigt/Workspace/kata/pulsar-schema-dlq-issue/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:compile[m [1m(default-compile)[m @ [36mpulsar-schema-dlq-issue[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:3.0.0:java[m [1m(default-cli)[m @ [36mpulsar-schema-dlq-issue[0;1m ---[m
+Apr 26, 2021 8:06:41 AM com.jvoigt.issue.WorkingExample main
+INFO: Starting Client....
+Apr 26, 2021 8:06:41 AM org.apache.pulsar.client.impl.ConnectionPool lambda$createConnection$8
+INFO: [[id: 0xd11053e8, L:/127.0.0.1:42462 - R:localhost/127.0.0.1:6650]] Connected to server
+Apr 26, 2021 8:06:42 AM org.apache.pulsar.client.impl.ProducerStatsRecorderImpl init
+INFO: Starting Pulsar producer perf with config: {
+  "topicName" : "topic",
+  "producerName" : null,
+  "sendTimeoutMs" : 30000,
+  "blockIfQueueFull" : false,
+  "maxPendingMessages" : 1000,
+  "maxPendingMessagesAcrossPartitions" : 50000,
+  "messageRoutingMode" : "RoundRobinPartition",
+  "hashingScheme" : "JavaStringHash",
+  "cryptoFailureAction" : "FAIL",
+  "batchingMaxPublishDelayMicros" : 1000,
+  "batchingPartitionSwitchFrequencyByPublishDelay" : 10,
+  "batchingMaxMessages" : 1000,
+  "batchingMaxBytes" : 131072,
+  "batchingEnabled" : true,
+  "chunkingEnabled" : false,
+  "compressionType" : "NONE",
+  "initialSequenceId" : null,
+  "autoUpdatePartitions" : true,
+  "autoUpdatePartitionsIntervalSeconds" : 60,
+  "multiSchema" : true,
+  "properties" : { }
+}
+Apr 26, 2021 8:06:42 AM org.apache.pulsar.client.impl.ProducerStatsRecorderImpl init
+INFO: Pulsar client config: {
+  "serviceUrl" : "pulsar://localhost:6650",
+  "authPluginClassName" : null,
+  "operationTimeoutMs" : 30000,
+  "statsIntervalSeconds" : 60,
+  "numIoThreads" : 1,
+  "numListenerThreads" : 1,
+  "connectionsPerBroker" : 1,
+  "useTcpNoDelay" : true,
+  "useTls" : false,
+  "tlsTrustCertsFilePath" : "",
+  "tlsAllowInsecureConnection" : false,
+  "tlsHostnameVerificationEnable" : false,
+  "concurrentLookupRequest" : 5000,
+  "maxLookupRequest" : 50000,
+  "maxLookupRedirects" : 20,
+  "maxNumberOfRejectedRequestPerConnection" : 50,
+  "keepAliveIntervalSeconds" : 30,
+  "connectionTimeoutMs" : 10000,
+  "requestTimeoutMs" : 60000,
+  "initialBackoffIntervalNanos" : 100000000,
+  "maxBackoffIntervalNanos" : 60000000000,
+  "listenerName" : null,
+  "useKeyStoreTls" : false,
+  "sslProvider" : null,
+  "tlsTrustStoreType" : "JKS",
+  "tlsTrustStorePath" : null,
+  "tlsTrustStorePassword" : null,
+  "tlsCiphers" : [ ],
+  "tlsProtocols" : [ ],
+  "proxyServiceUrl" : null,
+  "proxyProtocol" : null,
+  "enableTransaction" : false
+}
+Apr 26, 2021 8:06:42 AM org.apache.pulsar.client.impl.ProducerImpl connectionOpened
+INFO: [topic] [null] Creating producer on cnx [id: 0xd11053e8, L:/127.0.0.1:42462 - R:localhost/127.0.0.1:6650]
+Apr 26, 2021 8:06:42 AM org.apache.pulsar.client.impl.ProducerImpl lambda$connectionOpened$16
+INFO: [topic] [standalone-3-0] Created producer on cnx [id: 0xd11053e8, L:/127.0.0.1:42462 - R:localhost/127.0.0.1:6650]
+Apr 26, 2021 8:06:42 AM com.scurrilous.circe.checksum.Crc32cIntChecksum <clinit>
+WARNING: Failed to load Circe JNI library. Falling back to Java based CRC32c provider
+Apr 26, 2021 8:06:42 AM org.apache.pulsar.client.impl.ProducerImpl lambda$closeAsync$11
+INFO: [topic] [standalone-3-0] Closed Producer
+Apr 26, 2021 8:06:42 AM org.apache.pulsar.client.impl.ConsumerStatsRecorderImpl init
+INFO: Starting Pulsar consumer status recorder with config: {
+  "topicNames" : [ "topic" ],
+  "topicsPattern" : null,
+  "subscriptionName" : "subscription",
+  "subscriptionType" : "Shared",
+  "subscriptionMode" : "Durable",
+  "receiverQueueSize" : 1000,
+  "acknowledgementsGroupTimeMicros" : 100000,
+  "negativeAckRedeliveryDelayMicros" : 60000000,
+  "maxTotalReceiverQueueSizeAcrossPartitions" : 50000,
+  "consumerName" : null,
+  "ackTimeoutMillis" : 2000,
+  "tickDurationMillis" : 1000,
+  "priorityLevel" : 0,
+  "maxPendingChuckedMessage" : 10,
+  "autoAckOldestChunkedMessageOnQueueFull" : false,
+  "expireTimeOfIncompleteChunkedMessageMillis" : 60000,
+  "cryptoFailureAction" : "FAIL",
+  "properties" : { },
+  "readCompacted" : false,
+  "subscriptionInitialPosition" : "Latest",
+  "patternAutoDiscoveryPeriod" : 60,
+  "regexSubscriptionMode" : "PersistentOnly",
+  "deadLetterPolicy" : {
+    "maxRedeliverCount" : 3,
+    "retryLetterTopic" : null,
+    "deadLetterTopic" : null
+  },
+  "retryEnable" : false,
+  "autoUpdatePartitions" : true,
+  "autoUpdatePartitionsIntervalSeconds" : 60,
+  "replicateSubscriptionState" : false,
+  "resetIncludeHead" : false,
+  "keySharedPolicy" : null,
+  "batchIndexAckEnabled" : false
+}
+Apr 26, 2021 8:06:42 AM org.apache.pulsar.client.impl.ConsumerStatsRecorderImpl init
+INFO: Pulsar client config: {
+  "serviceUrl" : "pulsar://localhost:6650",
+  "authPluginClassName" : null,
+  "operationTimeoutMs" : 30000,
+  "statsIntervalSeconds" : 60,
+  "numIoThreads" : 1,
+  "numListenerThreads" : 1,
+  "connectionsPerBroker" : 1,
+  "useTcpNoDelay" : true,
+  "useTls" : false,
+  "tlsTrustCertsFilePath" : "",
+  "tlsAllowInsecureConnection" : false,
+  "tlsHostnameVerificationEnable" : false,
+  "concurrentLookupRequest" : 5000,
+  "maxLookupRequest" : 50000,
+  "maxLookupRedirects" : 20,
+  "maxNumberOfRejectedRequestPerConnection" : 50,
+  "keepAliveIntervalSeconds" : 30,
+  "connectionTimeoutMs" : 10000,
+  "requestTimeoutMs" : 60000,
+  "initialBackoffIntervalNanos" : 100000000,
+  "maxBackoffIntervalNanos" : 60000000000,
+  "listenerName" : null,
+  "useKeyStoreTls" : false,
+  "sslProvider" : null,
+  "tlsTrustStoreType" : "JKS",
+  "tlsTrustStorePath" : null,
+  "tlsTrustStorePassword" : null,
+  "tlsCiphers" : [ ],
+  "tlsProtocols" : [ ],
+  "proxyServiceUrl" : null,
+  "proxyProtocol" : null,
+  "enableTransaction" : false
+}
+Apr 26, 2021 8:06:42 AM org.apache.pulsar.client.impl.ConsumerImpl connectionOpened
+INFO: [topic][subscription] Subscribing to topic on cnx [id: 0xd11053e8, L:/127.0.0.1:42462 - R:localhost/127.0.0.1:6650], consumerId 0
+Apr 26, 2021 8:06:42 AM org.apache.pulsar.client.impl.ConsumerImpl consumerIsReconnectedToBroker
+INFO: [topic][subscription] Subscribed to topic on localhost/127.0.0.1:6650 -- consumer: 0
+Apr 26, 2021 8:06:42 AM org.apache.pulsar.client.impl.ConsumerStatsRecorderImpl init
+INFO: Starting Pulsar consumer status recorder with config: {
+  "topicNames" : [ "topic-subscription-DLQ" ],
+  "topicsPattern" : null,
+  "subscriptionName" : "dead",
+  "subscriptionType" : "Shared",
+  "subscriptionMode" : "Durable",
+  "receiverQueueSize" : 1000,
+  "acknowledgementsGroupTimeMicros" : 100000,
+  "negativeAckRedeliveryDelayMicros" : 60000000,
+  "maxTotalReceiverQueueSizeAcrossPartitions" : 50000,
+  "consumerName" : null,
+  "ackTimeoutMillis" : 0,
+  "tickDurationMillis" : 1000,
+  "priorityLevel" : 0,
+  "maxPendingChuckedMessage" : 10,
+  "autoAckOldestChunkedMessageOnQueueFull" : false,
+  "expireTimeOfIncompleteChunkedMessageMillis" : 60000,
+  "cryptoFailureAction" : "FAIL",
+  "properties" : { },
+  "readCompacted" : false,
+  "subscriptionInitialPosition" : "Latest",
+  "patternAutoDiscoveryPeriod" : 60,
+  "regexSubscriptionMode" : "PersistentOnly",
+  "deadLetterPolicy" : null,
+  "retryEnable" : false,
+  "autoUpdatePartitions" : true,
+  "autoUpdatePartitionsIntervalSeconds" : 60,
+  "replicateSubscriptionState" : false,
+  "resetIncludeHead" : false,
+  "keySharedPolicy" : null,
+  "batchIndexAckEnabled" : false
+}
+Apr 26, 2021 8:06:42 AM org.apache.pulsar.client.impl.ConsumerStatsRecorderImpl init
+INFO: Pulsar client config: {
+  "serviceUrl" : "pulsar://localhost:6650",
+  "authPluginClassName" : null,
+  "operationTimeoutMs" : 30000,
+  "statsIntervalSeconds" : 60,
+  "numIoThreads" : 1,
+  "numListenerThreads" : 1,
+  "connectionsPerBroker" : 1,
+  "useTcpNoDelay" : true,
+  "useTls" : false,
+  "tlsTrustCertsFilePath" : "",
+  "tlsAllowInsecureConnection" : false,
+  "tlsHostnameVerificationEnable" : false,
+  "concurrentLookupRequest" : 5000,
+  "maxLookupRequest" : 50000,
+  "maxLookupRedirects" : 20,
+  "maxNumberOfRejectedRequestPerConnection" : 50,
+  "keepAliveIntervalSeconds" : 30,
+  "connectionTimeoutMs" : 10000,
+  "requestTimeoutMs" : 60000,
+  "initialBackoffIntervalNanos" : 100000000,
+  "maxBackoffIntervalNanos" : 60000000000,
+  "listenerName" : null,
+  "useKeyStoreTls" : false,
+  "sslProvider" : null,
+  "tlsTrustStoreType" : "JKS",
+  "tlsTrustStorePath" : null,
+  "tlsTrustStorePassword" : null,
+  "tlsCiphers" : [ ],
+  "tlsProtocols" : [ ],
+  "proxyServiceUrl" : null,
+  "proxyProtocol" : null,
+  "enableTransaction" : false
+}
+Apr 26, 2021 8:06:42 AM com.jvoigt.issue.MyListener received
+INFO:  persistent://public/default/topic => Message received: My message
+Apr 26, 2021 8:06:42 AM org.apache.pulsar.client.impl.ConsumerImpl connectionOpened
+INFO: [topic-subscription-DLQ][dead] Subscribing to topic on cnx [id: 0xd11053e8, L:/127.0.0.1:42462 - R:localhost/127.0.0.1:6650], consumerId 1
+Apr 26, 2021 8:06:42 AM com.jvoigt.issue.MyListener received
+SEVERE: persistent://public/default/topic => I WILL NACK IT with Counter: 0
+Apr 26, 2021 8:06:42 AM org.apache.pulsar.client.impl.ConsumerImpl consumerIsReconnectedToBroker
+INFO: [topic-subscription-DLQ][dead] Subscribed to topic on localhost/127.0.0.1:6650 -- consumer: 1
+Apr 26, 2021 8:06:42 AM com.jvoigt.issue.MyListener received
+INFO:  persistent://public/default/topic-subscription-DLQ => Message received: My message
+Apr 26, 2021 8:06:42 AM com.jvoigt.issue.MyListener received
+SEVERE: persistent://public/default/topic-subscription-DLQ => I WILL NACK IT with Counter: 0
+Apr 26, 2021 8:06:42 AM com.jvoigt.issue.MyListener received
+INFO:  persistent://public/default/topic-subscription-DLQ => Message received: My message
+Apr 26, 2021 8:06:42 AM com.jvoigt.issue.MyListener received
+SEVERE: persistent://public/default/topic-subscription-DLQ => I WILL NACK IT with Counter: 0
+Apr 26, 2021 8:06:42 AM com.jvoigt.issue.MyListener received
+INFO:  persistent://public/default/topic-subscription-DLQ => Message received: My message
+Apr 26, 2021 8:06:42 AM com.jvoigt.issue.MyListener received
+SEVERE: persistent://public/default/topic-subscription-DLQ => I WILL NACK IT with Counter: 0
+Apr 26, 2021 8:06:42 AM com.jvoigt.issue.MyListener received
+INFO:  persistent://public/default/topic-subscription-DLQ => Message received: My message
+Apr 26, 2021 8:06:42 AM com.jvoigt.issue.MyListener received
+SEVERE: persistent://public/default/topic-subscription-DLQ => I WILL NACK IT with Counter: 0
+Apr 26, 2021 8:06:45 AM org.apache.pulsar.client.impl.UnAckedMessageTracker$2 run
+WARNING: [ConsumerBase{subscription='subscription', consumerName='04627', topic='topic'}] 1 messages have timed-out
+Apr 26, 2021 8:06:45 AM com.jvoigt.issue.MyListener received
+INFO:  persistent://public/default/topic => Message received: My message
+Apr 26, 2021 8:06:45 AM com.jvoigt.issue.MyListener received
+SEVERE: persistent://public/default/topic => I WILL NACK IT with Counter: 1
+Apr 26, 2021 8:06:48 AM org.apache.pulsar.client.impl.UnAckedMessageTracker$2 run
+WARNING: [ConsumerBase{subscription='subscription', consumerName='04627', topic='topic'}] 1 messages have timed-out
+Apr 26, 2021 8:06:48 AM com.jvoigt.issue.MyListener received
+INFO:  persistent://public/default/topic => Message received: My message
+Apr 26, 2021 8:06:48 AM com.jvoigt.issue.MyListener received
+SEVERE: persistent://public/default/topic => I WILL NACK IT with Counter: 2
+Apr 26, 2021 8:06:51 AM org.apache.pulsar.client.impl.UnAckedMessageTracker$2 run
+WARNING: [ConsumerBase{subscription='subscription', consumerName='04627', topic='topic'}] 1 messages have timed-out
+Apr 26, 2021 8:06:51 AM com.jvoigt.issue.MyListener received
+INFO:  persistent://public/default/topic => Message received: My message
+Apr 26, 2021 8:06:51 AM com.jvoigt.issue.MyListener received
+SEVERE: persistent://public/default/topic => I WILL NACK IT with Counter: 3
+Apr 26, 2021 8:06:54 AM org.apache.pulsar.client.impl.UnAckedMessageTracker$2 run
+WARNING: [ConsumerBase{subscription='subscription', consumerName='04627', topic='topic'}] 1 messages have timed-out
+Apr 26, 2021 8:06:54 AM org.apache.pulsar.client.impl.ProducerStatsRecorderImpl init
+INFO: Starting Pulsar producer perf with config: {
+  "topicName" : "topic-subscription-DLQ",
+  "producerName" : null,
+  "sendTimeoutMs" : 30000,
+  "blockIfQueueFull" : false,
+  "maxPendingMessages" : 1000,
+  "maxPendingMessagesAcrossPartitions" : 50000,
+  "messageRoutingMode" : "RoundRobinPartition",
+  "hashingScheme" : "JavaStringHash",
+  "cryptoFailureAction" : "FAIL",
+  "batchingMaxPublishDelayMicros" : 1000,
+  "batchingPartitionSwitchFrequencyByPublishDelay" : 10,
+  "batchingMaxMessages" : 1000,
+  "batchingMaxBytes" : 131072,
+  "batchingEnabled" : true,
+  "chunkingEnabled" : false,
+  "compressionType" : "NONE",
+  "initialSequenceId" : null,
+  "autoUpdatePartitions" : true,
+  "autoUpdatePartitionsIntervalSeconds" : 60,
+  "multiSchema" : true,
+  "properties" : { }
+}
+Apr 26, 2021 8:06:54 AM org.apache.pulsar.client.impl.ProducerStatsRecorderImpl init
+INFO: Pulsar client config: {
+  "serviceUrl" : "pulsar://localhost:6650",
+  "authPluginClassName" : null,
+  "operationTimeoutMs" : 30000,
+  "statsIntervalSeconds" : 60,
+  "numIoThreads" : 1,
+  "numListenerThreads" : 1,
+  "connectionsPerBroker" : 1,
+  "useTcpNoDelay" : true,
+  "useTls" : false,
+  "tlsTrustCertsFilePath" : "",
+  "tlsAllowInsecureConnection" : false,
+  "tlsHostnameVerificationEnable" : false,
+  "concurrentLookupRequest" : 5000,
+  "maxLookupRequest" : 50000,
+  "maxLookupRedirects" : 20,
+  "maxNumberOfRejectedRequestPerConnection" : 50,
+  "keepAliveIntervalSeconds" : 30,
+  "connectionTimeoutMs" : 10000,
+  "requestTimeoutMs" : 60000,
+  "initialBackoffIntervalNanos" : 100000000,
+  "maxBackoffIntervalNanos" : 60000000000,
+  "listenerName" : null,
+  "useKeyStoreTls" : false,
+  "sslProvider" : null,
+  "tlsTrustStoreType" : "JKS",
+  "tlsTrustStorePath" : null,
+  "tlsTrustStorePassword" : null,
+  "tlsCiphers" : [ ],
+  "tlsProtocols" : [ ],
+  "proxyServiceUrl" : null,
+  "proxyProtocol" : null,
+  "enableTransaction" : false
+}
+Apr 26, 2021 8:06:54 AM org.apache.pulsar.client.impl.ProducerImpl connectionOpened
+INFO: [topic-subscription-DLQ] [null] Creating producer on cnx [id: 0xd11053e8, L:/127.0.0.1:42462 - R:localhost/127.0.0.1:6650]
+Apr 26, 2021 8:06:54 AM org.apache.pulsar.client.impl.ProducerImpl lambda$connectionOpened$16
+INFO: [topic-subscription-DLQ] [standalone-3-1] Created producer on cnx [id: 0xd11053e8, L:/127.0.0.1:42462 - R:localhost/127.0.0.1:6650]
+Apr 26, 2021 8:06:54 AM com.jvoigt.issue.MyListener received
+INFO:  persistent://public/default/topic-subscription-DLQ => Message received: My message
+Apr 26, 2021 8:06:54 AM com.jvoigt.issue.MyListener received
+SEVERE: persistent://public/default/topic-subscription-DLQ => I WILL NACK IT with Counter: 0
