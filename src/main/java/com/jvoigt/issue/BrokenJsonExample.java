@@ -24,18 +24,21 @@ public class BrokenJsonExample {
         Schema<Payload> schema = JSONSchema.of(Payload.class); 
         String topic = "jsonTopic";
 
+        log.info("Starting Producer....");
         Producer<Payload> stringProducer = pulsarClient.newProducer(schema).topic(topic).create();
         stringProducer.send( new Payload("My Json message"));
         stringProducer.flush();
         stringProducer.close();
 
+        log.info("Starting Consumer....");
         Consumer<Payload> pulsarConsumer = pulsarClient.newConsumer(schema).topic(topic)
                 .subscriptionType(SubscriptionType.Shared).subscriptionName("subscription")
                 .ackTimeout(2, TimeUnit.SECONDS)
                 .deadLetterPolicy(DeadLetterPolicy.builder().maxRedeliverCount(3).build())
                 .messageListener(new MyListener()).subscribe();
                 
-        Consumer<Payload> deadConsumer = pulsarClient.newConsumer(schema).topic("schema-topic-subscription-DLQ")
+        log.info("Starting DLQ-Consumer....");
+        Consumer<Payload> deadConsumer = pulsarClient.newConsumer(schema).topic("schema-jsonTopic-subscription-DLQ")
                 .subscriptionType(SubscriptionType.Shared).subscriptionName("dead")
                 .messageListener(new MyListener()).subscribe();
     }
