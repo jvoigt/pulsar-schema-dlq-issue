@@ -17,51 +17,13 @@ WARNING: All illegal access operations will be denied in a future release
 [[1;34mINFO[m] Nothing to compile - all classes are up to date
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:3.0.0:java[m [1m(default-cli)[m @ [36mpulsar-schema-dlq-issue[0;1m ---[m
-Apr 26, 2021 8:18:56 AM com.jvoigt.issue.BrokenJsonExample main
+Apr 27, 2021 12:21:14 PM com.jvoigt.issue.BrokenJsonExample main
 INFO: Starting Client....
-Apr 26, 2021 8:18:57 AM org.apache.pulsar.client.impl.ConnectionPool lambda$createConnection$8
-INFO: [[id: 0x7387c096, L:/127.0.0.1:43166 - R:localhost/127.0.0.1:6650]] Connected to server
-Apr 26, 2021 8:18:57 AM org.apache.pulsar.client.impl.ClientCnx channelInactive
-INFO: [id: 0x7387c096, L:/127.0.0.1:43166 ! R:localhost/127.0.0.1:6650] Disconnected
-Apr 26, 2021 8:18:57 AM org.apache.pulsar.client.impl.ConnectionPool lambda$null$7
-WARNING: [[id: 0x7387c096, L:/127.0.0.1:43166 ! R:localhost/127.0.0.1:6650]] Connection handshake failed: org.apache.pulsar.client.api.PulsarClientException: Connection already closed
-Apr 26, 2021 8:18:57 AM org.apache.pulsar.client.impl.PulsarClientImpl lambda$null$23
-WARNING: [topic: persistent://public/default/jsonTopic] Could not get connection while getPartitionedTopicMetadata -- Will try again in 100 ms
-Apr 26, 2021 8:18:57 AM org.apache.pulsar.client.impl.ConnectionPool lambda$createConnection$8
-INFO: [[id: 0x00109dbe, L:/127.0.0.1:43170 - R:localhost/127.0.0.1:6650]] Connected to server
-Apr 26, 2021 8:18:57 AM org.apache.pulsar.client.impl.ClientCnx channelInactive
-INFO: [id: 0x00109dbe, L:/127.0.0.1:43170 ! R:localhost/127.0.0.1:6650] Disconnected
-Apr 26, 2021 8:18:57 AM org.apache.pulsar.client.impl.ConnectionPool lambda$null$7
-WARNING: [[id: 0x00109dbe, L:/127.0.0.1:43170 ! R:localhost/127.0.0.1:6650]] Connection handshake failed: org.apache.pulsar.client.api.PulsarClientException: Connection already closed
-Apr 26, 2021 8:18:57 AM org.apache.pulsar.client.impl.PulsarClientImpl lambda$null$23
-WARNING: [topic: persistent://public/default/jsonTopic] Could not get connection while getPartitionedTopicMetadata -- Will try again in 184 ms
-Apr 26, 2021 8:18:57 AM org.apache.pulsar.client.impl.ConnectionPool lambda$createConnection$8
-INFO: [[id: 0x74915723, L:/127.0.0.1:43174 - R:localhost/127.0.0.1:6650]] Connected to server
-Apr 26, 2021 8:18:57 AM org.apache.pulsar.client.impl.ClientCnx channelInactive
-INFO: [id: 0x74915723, L:/127.0.0.1:43174 ! R:localhost/127.0.0.1:6650] Disconnected
-Apr 26, 2021 8:18:57 AM org.apache.pulsar.client.impl.ConnectionPool lambda$null$7
-WARNING: [[id: 0x74915723, L:/127.0.0.1:43174 ! R:localhost/127.0.0.1:6650]] Connection handshake failed: org.apache.pulsar.client.api.PulsarClientException: Connection already closed
-Apr 26, 2021 8:18:58 AM org.apache.pulsar.client.impl.PulsarClientImpl lambda$null$23
-WARNING: [topic: persistent://public/default/jsonTopic] Could not get connection while getPartitionedTopicMetadata -- Will try again in 391 ms
-Apr 26, 2021 8:18:58 AM org.apache.pulsar.client.impl.ConnectionPool lambda$createConnection$8
-INFO: [[id: 0x4c1fafcf, L:/127.0.0.1:43178 - R:localhost/127.0.0.1:6650]] Connected to server
-Apr 26, 2021 8:18:58 AM org.apache.pulsar.client.impl.ClientCnx channelInactive
-INFO: [id: 0x4c1fafcf, L:/127.0.0.1:43178 ! R:localhost/127.0.0.1:6650] Disconnected
-Apr 26, 2021 8:18:58 AM org.apache.pulsar.client.impl.ConnectionPool lambda$null$7
-WARNING: [[id: 0x4c1fafcf, L:/127.0.0.1:43178 ! R:localhost/127.0.0.1:6650]] Connection handshake failed: org.apache.pulsar.client.api.PulsarClientException: Connection already closed
-Apr 26, 2021 8:18:58 AM org.apache.pulsar.client.impl.PulsarClientImpl lambda$null$23
-WARNING: [topic: persistent://public/default/jsonTopic] Could not get connection while getPartitionedTopicMetadata -- Will try again in 745 ms
-Apr 26, 2021 8:18:58 AM org.apache.pulsar.client.impl.ConnectionPool lambda$createConnection$8
-INFO: [[id: 0xf6be6c2d, L:/127.0.0.1:43182 - R:localhost/127.0.0.1:6650]] Connected to server
-Apr 26, 2021 8:18:58 AM org.apache.pulsar.client.impl.ClientCnx channelInactive
-INFO: [id: 0xf6be6c2d, L:/127.0.0.1:43182 ! R:localhost/127.0.0.1:6650] Disconnected
-Apr 26, 2021 8:18:58 AM org.apache.pulsar.client.impl.ConnectionPool lambda$null$7
-WARNING: [[id: 0xf6be6c2d, L:/127.0.0.1:43182 ! R:localhost/127.0.0.1:6650]] Connection handshake failed: org.apache.pulsar.client.api.PulsarClientException: Connection already closed
-Apr 26, 2021 8:19:00 AM org.apache.pulsar.client.impl.PulsarClientImpl lambda$null$23
-WARNING: [topic: persistent://public/default/jsonTopic] Could not get connection while getPartitionedTopicMetadata -- Will try again in 1583 ms
-Apr 26, 2021 8:19:00 AM org.apache.pulsar.client.impl.ConnectionPool lambda$createConnection$8
-INFO: [[id: 0x365e3767, L:/127.0.0.1:43196 - R:localhost/127.0.0.1:6650]] Connected to server
-Apr 26, 2021 8:19:01 AM org.apache.pulsar.client.impl.ProducerStatsRecorderImpl init
+Apr 27, 2021 12:21:14 PM com.jvoigt.issue.BrokenJsonExample main
+INFO: Starting Producer....
+Apr 27, 2021 12:21:14 PM org.apache.pulsar.client.impl.ConnectionPool lambda$createConnection$8
+INFO: [[id: 0xc8a31fea, L:/127.0.0.1:48418 - R:localhost/127.0.0.1:6650]] Connected to server
+Apr 27, 2021 12:21:14 PM org.apache.pulsar.client.impl.ProducerStatsRecorderImpl init
 INFO: Starting Pulsar producer perf with config: {
   "topicName" : "jsonTopic",
   "producerName" : null,
@@ -85,7 +47,7 @@ INFO: Starting Pulsar producer perf with config: {
   "multiSchema" : true,
   "properties" : { }
 }
-Apr 26, 2021 8:19:01 AM org.apache.pulsar.client.impl.ProducerStatsRecorderImpl init
+Apr 27, 2021 12:21:14 PM org.apache.pulsar.client.impl.ProducerStatsRecorderImpl init
 INFO: Pulsar client config: {
   "serviceUrl" : "pulsar://localhost:6650",
   "authPluginClassName" : null,
@@ -120,85 +82,17 @@ INFO: Pulsar client config: {
   "proxyProtocol" : null,
   "enableTransaction" : false
 }
-Apr 26, 2021 8:19:01 AM org.apache.pulsar.client.impl.ClientCnx checkServerError
-SEVERE: [id: 0x365e3767, L:/127.0.0.1:43196 - R:localhost/127.0.0.1:6650] Close connection because received internal-server error java.lang.IllegalStateException: The leader election has not yet been completed!
-Apr 26, 2021 8:19:01 AM org.apache.pulsar.client.impl.BinaryProtoLookupService lambda$null$1
-WARNING: [persistent://public/default/jsonTopic] failed to send lookup request : java.lang.IllegalStateException: The leader election has not yet been completed!
-Apr 26, 2021 8:19:01 AM org.apache.pulsar.client.impl.ConnectionHandler handleConnectionError
-WARNING: [jsonTopic] [null] Error connecting to broker: org.apache.pulsar.client.api.PulsarClientException$LookupException: java.lang.IllegalStateException: The leader election has not yet been completed!
-Apr 26, 2021 8:19:01 AM org.apache.pulsar.client.impl.ConnectionHandler reconnectLater
-WARNING: [jsonTopic] [null] Could not get connection to broker: org.apache.pulsar.client.api.PulsarClientException$LookupException: java.lang.IllegalStateException: The leader election has not yet been completed! -- Will try again in 0.1 s
-Apr 26, 2021 8:19:01 AM org.apache.pulsar.client.impl.ClientCnx channelInactive
-INFO: [id: 0x365e3767, L:/127.0.0.1:43196 ! R:localhost/127.0.0.1:6650] Disconnected
-Apr 26, 2021 8:19:01 AM org.apache.pulsar.client.impl.ConnectionHandler lambda$reconnectLater$1
-INFO: [jsonTopic] [null] Reconnecting after connection was closed
-Apr 26, 2021 8:19:01 AM org.apache.pulsar.client.impl.ConnectionPool lambda$createConnection$8
-INFO: [[id: 0x90fe8ea5, L:/127.0.0.1:43200 - R:localhost/127.0.0.1:6650]] Connected to server
-Apr 26, 2021 8:19:01 AM org.apache.pulsar.client.impl.ClientCnx checkServerError
-SEVERE: [id: 0x90fe8ea5, L:/127.0.0.1:43200 - R:localhost/127.0.0.1:6650] Close connection because received internal-server error java.lang.IllegalStateException: The leader election has not yet been completed!
-Apr 26, 2021 8:19:01 AM org.apache.pulsar.client.impl.BinaryProtoLookupService lambda$null$1
-WARNING: [persistent://public/default/jsonTopic] failed to send lookup request : java.lang.IllegalStateException: The leader election has not yet been completed!
-Apr 26, 2021 8:19:01 AM org.apache.pulsar.client.impl.ConnectionHandler handleConnectionError
-WARNING: [jsonTopic] [null] Error connecting to broker: org.apache.pulsar.client.api.PulsarClientException$LookupException: java.lang.IllegalStateException: The leader election has not yet been completed!
-Apr 26, 2021 8:19:01 AM org.apache.pulsar.client.impl.ConnectionHandler reconnectLater
-WARNING: [jsonTopic] [null] Could not get connection to broker: org.apache.pulsar.client.api.PulsarClientException$LookupException: java.lang.IllegalStateException: The leader election has not yet been completed! -- Will try again in 0.195 s
-Apr 26, 2021 8:19:01 AM org.apache.pulsar.client.impl.ClientCnx channelInactive
-INFO: [id: 0x90fe8ea5, L:/127.0.0.1:43200 ! R:localhost/127.0.0.1:6650] Disconnected
-Apr 26, 2021 8:19:01 AM org.apache.pulsar.client.impl.ConnectionHandler lambda$reconnectLater$1
-INFO: [jsonTopic] [null] Reconnecting after connection was closed
-Apr 26, 2021 8:19:01 AM org.apache.pulsar.client.impl.ConnectionPool lambda$createConnection$8
-INFO: [[id: 0xf2121c55, L:/127.0.0.1:43204 - R:localhost/127.0.0.1:6650]] Connected to server
-Apr 26, 2021 8:19:01 AM org.apache.pulsar.client.impl.ClientCnx checkServerError
-SEVERE: [id: 0xf2121c55, L:/127.0.0.1:43204 - R:localhost/127.0.0.1:6650] Close connection because received internal-server error java.lang.IllegalStateException: The leader election has not yet been completed!
-Apr 26, 2021 8:19:01 AM org.apache.pulsar.client.impl.BinaryProtoLookupService lambda$null$1
-WARNING: [persistent://public/default/jsonTopic] failed to send lookup request : java.lang.IllegalStateException: The leader election has not yet been completed!
-Apr 26, 2021 8:19:01 AM org.apache.pulsar.client.impl.ConnectionHandler handleConnectionError
-WARNING: [jsonTopic] [null] Error connecting to broker: org.apache.pulsar.client.api.PulsarClientException$LookupException: java.lang.IllegalStateException: The leader election has not yet been completed!
-Apr 26, 2021 8:19:01 AM org.apache.pulsar.client.impl.ConnectionHandler reconnectLater
-WARNING: [jsonTopic] [null] Could not get connection to broker: org.apache.pulsar.client.api.PulsarClientException$LookupException: java.lang.IllegalStateException: The leader election has not yet been completed! -- Will try again in 0.382 s
-Apr 26, 2021 8:19:01 AM org.apache.pulsar.client.impl.ClientCnx channelInactive
-INFO: [id: 0xf2121c55, L:/127.0.0.1:43204 ! R:localhost/127.0.0.1:6650] Disconnected
-Apr 26, 2021 8:19:01 AM org.apache.pulsar.client.impl.ConnectionHandler lambda$reconnectLater$1
-INFO: [jsonTopic] [null] Reconnecting after connection was closed
-Apr 26, 2021 8:19:01 AM org.apache.pulsar.client.impl.ConnectionPool lambda$createConnection$8
-INFO: [[id: 0x4620acb3, L:/127.0.0.1:43208 - R:localhost/127.0.0.1:6650]] Connected to server
-Apr 26, 2021 8:19:01 AM org.apache.pulsar.client.impl.ClientCnx checkServerError
-SEVERE: [id: 0x4620acb3, L:/127.0.0.1:43208 - R:localhost/127.0.0.1:6650] Close connection because received internal-server error java.lang.IllegalStateException: The leader election has not yet been completed!
-Apr 26, 2021 8:19:01 AM org.apache.pulsar.client.impl.BinaryProtoLookupService lambda$null$1
-WARNING: [persistent://public/default/jsonTopic] failed to send lookup request : java.lang.IllegalStateException: The leader election has not yet been completed!
-Apr 26, 2021 8:19:01 AM org.apache.pulsar.client.impl.ConnectionHandler handleConnectionError
-WARNING: [jsonTopic] [null] Error connecting to broker: org.apache.pulsar.client.api.PulsarClientException$LookupException: java.lang.IllegalStateException: The leader election has not yet been completed!
-Apr 26, 2021 8:19:01 AM org.apache.pulsar.client.impl.ConnectionHandler reconnectLater
-WARNING: [jsonTopic] [null] Could not get connection to broker: org.apache.pulsar.client.api.PulsarClientException$LookupException: java.lang.IllegalStateException: The leader election has not yet been completed! -- Will try again in 0.762 s
-Apr 26, 2021 8:19:01 AM org.apache.pulsar.client.impl.ClientCnx channelInactive
-INFO: [id: 0x4620acb3, L:/127.0.0.1:43208 ! R:localhost/127.0.0.1:6650] Disconnected
-Apr 26, 2021 8:19:02 AM org.apache.pulsar.client.impl.ConnectionHandler lambda$reconnectLater$1
-INFO: [jsonTopic] [null] Reconnecting after connection was closed
-Apr 26, 2021 8:19:02 AM org.apache.pulsar.client.impl.ConnectionPool lambda$createConnection$8
-INFO: [[id: 0x33b43a73, L:/127.0.0.1:43212 - R:localhost/127.0.0.1:6650]] Connected to server
-Apr 26, 2021 8:19:02 AM org.apache.pulsar.client.impl.ClientCnx checkServerError
-SEVERE: [id: 0x33b43a73, L:/127.0.0.1:43212 - R:localhost/127.0.0.1:6650] Close connection because received internal-server error java.lang.NullPointerException
-Apr 26, 2021 8:19:02 AM org.apache.pulsar.client.impl.BinaryProtoLookupService lambda$null$1
-WARNING: [persistent://public/default/jsonTopic] failed to send lookup request : java.lang.NullPointerException
-Apr 26, 2021 8:19:02 AM org.apache.pulsar.client.impl.ConnectionHandler handleConnectionError
-WARNING: [jsonTopic] [null] Error connecting to broker: org.apache.pulsar.client.api.PulsarClientException$LookupException: java.lang.NullPointerException
-Apr 26, 2021 8:19:02 AM org.apache.pulsar.client.impl.ConnectionHandler reconnectLater
-WARNING: [jsonTopic] [null] Could not get connection to broker: org.apache.pulsar.client.api.PulsarClientException$LookupException: java.lang.NullPointerException -- Will try again in 1.589 s
-Apr 26, 2021 8:19:02 AM org.apache.pulsar.client.impl.ClientCnx channelInactive
-INFO: [id: 0x33b43a73, L:/127.0.0.1:43212 ! R:localhost/127.0.0.1:6650] Disconnected
-Apr 26, 2021 8:19:04 AM org.apache.pulsar.client.impl.ConnectionHandler lambda$reconnectLater$1
-INFO: [jsonTopic] [null] Reconnecting after connection was closed
-Apr 26, 2021 8:19:04 AM org.apache.pulsar.client.impl.ConnectionPool lambda$createConnection$8
-INFO: [[id: 0x7861b6d7, L:/127.0.0.1:43226 - R:localhost/127.0.0.1:6650]] Connected to server
-Apr 26, 2021 8:19:04 AM org.apache.pulsar.client.impl.ProducerImpl connectionOpened
-INFO: [jsonTopic] [null] Creating producer on cnx [id: 0x7861b6d7, L:/127.0.0.1:43226 - R:localhost/127.0.0.1:6650]
-Apr 26, 2021 8:19:04 AM org.apache.pulsar.client.impl.ProducerImpl lambda$connectionOpened$16
-INFO: [jsonTopic] [standalone-6-0] Created producer on cnx [id: 0x7861b6d7, L:/127.0.0.1:43226 - R:localhost/127.0.0.1:6650]
-Apr 26, 2021 8:19:04 AM com.scurrilous.circe.checksum.Crc32cIntChecksum <clinit>
+Apr 27, 2021 12:21:14 PM org.apache.pulsar.client.impl.ProducerImpl connectionOpened
+INFO: [jsonTopic] [null] Creating producer on cnx [id: 0xc8a31fea, L:/127.0.0.1:48418 - R:localhost/127.0.0.1:6650]
+Apr 27, 2021 12:21:14 PM org.apache.pulsar.client.impl.ProducerImpl lambda$connectionOpened$16
+INFO: [jsonTopic] [standalone-2-5] Created producer on cnx [id: 0xc8a31fea, L:/127.0.0.1:48418 - R:localhost/127.0.0.1:6650]
+Apr 27, 2021 12:21:14 PM com.scurrilous.circe.checksum.Crc32cIntChecksum <clinit>
 WARNING: Failed to load Circe JNI library. Falling back to Java based CRC32c provider
-Apr 26, 2021 8:19:04 AM org.apache.pulsar.client.impl.ProducerImpl lambda$closeAsync$11
-INFO: [jsonTopic] [standalone-6-0] Closed Producer
-Apr 26, 2021 8:19:04 AM org.apache.pulsar.client.impl.ConsumerStatsRecorderImpl init
+Apr 27, 2021 12:21:14 PM org.apache.pulsar.client.impl.ProducerImpl lambda$closeAsync$11
+INFO: [jsonTopic] [standalone-2-5] Closed Producer
+Apr 27, 2021 12:21:14 PM com.jvoigt.issue.BrokenJsonExample main
+INFO: Starting Consumer....
+Apr 27, 2021 12:21:14 PM org.apache.pulsar.client.impl.ConsumerStatsRecorderImpl init
 INFO: Starting Pulsar consumer status recorder with config: {
   "topicNames" : [ "jsonTopic" ],
   "topicsPattern" : null,
@@ -235,7 +129,7 @@ INFO: Starting Pulsar consumer status recorder with config: {
   "keySharedPolicy" : null,
   "batchIndexAckEnabled" : false
 }
-Apr 26, 2021 8:19:04 AM org.apache.pulsar.client.impl.ConsumerStatsRecorderImpl init
+Apr 27, 2021 12:21:14 PM org.apache.pulsar.client.impl.ConsumerStatsRecorderImpl init
 INFO: Pulsar client config: {
   "serviceUrl" : "pulsar://localhost:6650",
   "authPluginClassName" : null,
@@ -270,13 +164,19 @@ INFO: Pulsar client config: {
   "proxyProtocol" : null,
   "enableTransaction" : false
 }
-Apr 26, 2021 8:19:04 AM org.apache.pulsar.client.impl.ConsumerImpl connectionOpened
-INFO: [jsonTopic][subscription] Subscribing to topic on cnx [id: 0x7861b6d7, L:/127.0.0.1:43226 - R:localhost/127.0.0.1:6650], consumerId 0
-Apr 26, 2021 8:19:04 AM org.apache.pulsar.client.impl.ConsumerImpl consumerIsReconnectedToBroker
+Apr 27, 2021 12:21:14 PM org.apache.pulsar.client.impl.ConsumerImpl connectionOpened
+INFO: [jsonTopic][subscription] Subscribing to topic on cnx [id: 0xc8a31fea, L:/127.0.0.1:48418 - R:localhost/127.0.0.1:6650], consumerId 0
+Apr 27, 2021 12:21:14 PM org.apache.pulsar.client.impl.ConsumerImpl consumerIsReconnectedToBroker
 INFO: [jsonTopic][subscription] Subscribed to topic on localhost/127.0.0.1:6650 -- consumer: 0
-Apr 26, 2021 8:19:04 AM org.apache.pulsar.client.impl.ConsumerStatsRecorderImpl init
+Apr 27, 2021 12:21:14 PM com.jvoigt.issue.BrokenJsonExample main
+INFO: Starting DLQ-Consumer....
+Apr 27, 2021 12:21:14 PM com.jvoigt.issue.MyListener received
+INFO:  persistent://public/default/jsonTopic => Message received: {"message":"My Payload"}
+Apr 27, 2021 12:21:14 PM com.jvoigt.issue.MyListener received
+SEVERE: persistent://public/default/jsonTopic => I WILL NACK IT with Counter: 0
+Apr 27, 2021 12:21:14 PM org.apache.pulsar.client.impl.ConsumerStatsRecorderImpl init
 INFO: Starting Pulsar consumer status recorder with config: {
-  "topicNames" : [ "schema-topic-subscription-DLQ" ],
+  "topicNames" : [ "schema-jsonTopic-subscription-DLQ" ],
   "topicsPattern" : null,
   "subscriptionName" : "dead",
   "subscriptionType" : "Shared",
@@ -307,7 +207,7 @@ INFO: Starting Pulsar consumer status recorder with config: {
   "keySharedPolicy" : null,
   "batchIndexAckEnabled" : false
 }
-Apr 26, 2021 8:19:04 AM org.apache.pulsar.client.impl.ConsumerStatsRecorderImpl init
+Apr 27, 2021 12:21:14 PM org.apache.pulsar.client.impl.ConsumerStatsRecorderImpl init
 INFO: Pulsar client config: {
   "serviceUrl" : "pulsar://localhost:6650",
   "authPluginClassName" : null,
@@ -342,35 +242,31 @@ INFO: Pulsar client config: {
   "proxyProtocol" : null,
   "enableTransaction" : false
 }
-Apr 26, 2021 8:19:04 AM com.jvoigt.issue.MyListener received
-INFO:  persistent://public/default/jsonTopic => Message received: {"message":"My Json message"}
-Apr 26, 2021 8:19:04 AM com.jvoigt.issue.MyListener received
-SEVERE: persistent://public/default/jsonTopic => I WILL NACK IT with Counter: 0
-Apr 26, 2021 8:19:04 AM org.apache.pulsar.client.impl.ConsumerImpl connectionOpened
-INFO: [schema-topic-subscription-DLQ][dead] Subscribing to topic on cnx [id: 0x7861b6d7, L:/127.0.0.1:43226 - R:localhost/127.0.0.1:6650], consumerId 1
-Apr 26, 2021 8:19:04 AM org.apache.pulsar.client.impl.ConsumerImpl consumerIsReconnectedToBroker
-INFO: [schema-topic-subscription-DLQ][dead] Subscribed to topic on localhost/127.0.0.1:6650 -- consumer: 1
-Apr 26, 2021 8:19:07 AM org.apache.pulsar.client.impl.UnAckedMessageTracker$2 run
-WARNING: [ConsumerBase{subscription='subscription', consumerName='5416a', topic='jsonTopic'}] 1 messages have timed-out
-Apr 26, 2021 8:19:07 AM com.jvoigt.issue.MyListener received
-INFO:  persistent://public/default/jsonTopic => Message received: {"message":"My Json message"}
-Apr 26, 2021 8:19:07 AM com.jvoigt.issue.MyListener received
+Apr 27, 2021 12:21:14 PM org.apache.pulsar.client.impl.ConsumerImpl connectionOpened
+INFO: [schema-jsonTopic-subscription-DLQ][dead] Subscribing to topic on cnx [id: 0xc8a31fea, L:/127.0.0.1:48418 - R:localhost/127.0.0.1:6650], consumerId 1
+Apr 27, 2021 12:21:14 PM org.apache.pulsar.client.impl.ConsumerImpl consumerIsReconnectedToBroker
+INFO: [schema-jsonTopic-subscription-DLQ][dead] Subscribed to topic on localhost/127.0.0.1:6650 -- consumer: 1
+Apr 27, 2021 12:21:17 PM org.apache.pulsar.client.impl.UnAckedMessageTracker$2 run
+WARNING: [ConsumerBase{subscription='subscription', consumerName='a2435', topic='jsonTopic'}] 1 messages have timed-out
+Apr 27, 2021 12:21:17 PM com.jvoigt.issue.MyListener received
+INFO:  persistent://public/default/jsonTopic => Message received: {"message":"My Payload"}
+Apr 27, 2021 12:21:17 PM com.jvoigt.issue.MyListener received
 SEVERE: persistent://public/default/jsonTopic => I WILL NACK IT with Counter: 1
-Apr 26, 2021 8:19:10 AM org.apache.pulsar.client.impl.UnAckedMessageTracker$2 run
-WARNING: [ConsumerBase{subscription='subscription', consumerName='5416a', topic='jsonTopic'}] 1 messages have timed-out
-Apr 26, 2021 8:19:10 AM com.jvoigt.issue.MyListener received
-INFO:  persistent://public/default/jsonTopic => Message received: {"message":"My Json message"}
-Apr 26, 2021 8:19:10 AM com.jvoigt.issue.MyListener received
+Apr 27, 2021 12:21:20 PM org.apache.pulsar.client.impl.UnAckedMessageTracker$2 run
+WARNING: [ConsumerBase{subscription='subscription', consumerName='a2435', topic='jsonTopic'}] 1 messages have timed-out
+Apr 27, 2021 12:21:20 PM com.jvoigt.issue.MyListener received
+INFO:  persistent://public/default/jsonTopic => Message received: {"message":"My Payload"}
+Apr 27, 2021 12:21:20 PM com.jvoigt.issue.MyListener received
 SEVERE: persistent://public/default/jsonTopic => I WILL NACK IT with Counter: 2
-Apr 26, 2021 8:19:13 AM org.apache.pulsar.client.impl.UnAckedMessageTracker$2 run
-WARNING: [ConsumerBase{subscription='subscription', consumerName='5416a', topic='jsonTopic'}] 1 messages have timed-out
-Apr 26, 2021 8:19:13 AM com.jvoigt.issue.MyListener received
-INFO:  persistent://public/default/jsonTopic => Message received: {"message":"My Json message"}
-Apr 26, 2021 8:19:13 AM com.jvoigt.issue.MyListener received
+Apr 27, 2021 12:21:23 PM org.apache.pulsar.client.impl.UnAckedMessageTracker$2 run
+WARNING: [ConsumerBase{subscription='subscription', consumerName='a2435', topic='jsonTopic'}] 1 messages have timed-out
+Apr 27, 2021 12:21:23 PM com.jvoigt.issue.MyListener received
+INFO:  persistent://public/default/jsonTopic => Message received: {"message":"My Payload"}
+Apr 27, 2021 12:21:23 PM com.jvoigt.issue.MyListener received
 SEVERE: persistent://public/default/jsonTopic => I WILL NACK IT with Counter: 3
-Apr 26, 2021 8:19:16 AM org.apache.pulsar.client.impl.UnAckedMessageTracker$2 run
-WARNING: [ConsumerBase{subscription='subscription', consumerName='5416a', topic='jsonTopic'}] 1 messages have timed-out
-Apr 26, 2021 8:19:16 AM org.apache.pulsar.client.impl.ProducerStatsRecorderImpl init
+Apr 27, 2021 12:21:26 PM org.apache.pulsar.client.impl.UnAckedMessageTracker$2 run
+WARNING: [ConsumerBase{subscription='subscription', consumerName='a2435', topic='jsonTopic'}] 1 messages have timed-out
+Apr 27, 2021 12:21:26 PM org.apache.pulsar.client.impl.ProducerStatsRecorderImpl init
 INFO: Starting Pulsar producer perf with config: {
   "topicName" : "jsonTopic-subscription-DLQ",
   "producerName" : null,
@@ -394,7 +290,7 @@ INFO: Starting Pulsar producer perf with config: {
   "multiSchema" : true,
   "properties" : { }
 }
-Apr 26, 2021 8:19:16 AM org.apache.pulsar.client.impl.ProducerStatsRecorderImpl init
+Apr 27, 2021 12:21:26 PM org.apache.pulsar.client.impl.ProducerStatsRecorderImpl init
 INFO: Pulsar client config: {
   "serviceUrl" : "pulsar://localhost:6650",
   "authPluginClassName" : null,
@@ -429,72 +325,9 @@ INFO: Pulsar client config: {
   "proxyProtocol" : null,
   "enableTransaction" : false
 }
-Apr 26, 2021 8:19:16 AM org.apache.pulsar.client.impl.ProducerImpl connectionOpened
-INFO: [jsonTopic-subscription-DLQ] [null] Creating producer on cnx [id: 0x7861b6d7, L:/127.0.0.1:43226 - R:localhost/127.0.0.1:6650]
-Apr 26, 2021 8:19:16 AM org.apache.pulsar.client.impl.ProducerImpl lambda$connectionOpened$16
-INFO: [jsonTopic-subscription-DLQ] [standalone-6-1] Created producer on cnx [id: 0x7861b6d7, L:/127.0.0.1:43226 - R:localhost/127.0.0.1:6650]
-Apr 26, 2021 8:20:04 AM org.apache.pulsar.client.impl.ConsumerStatsRecorderImpl lambda$init$0
-INFO: [jsonTopic] [subscription] [5416a] Prefetched messages: 0 --- Consume throughput received: 0.07 msgs/s --- 0.00 Mbit/s --- Ack sent rate: 0.00 ack/s --- Failed messages: 0 --- batch messages: 0 ---Failed acks: 0
-Apr 26, 2021 8:20:24 AM org.apache.pulsar.client.impl.ProducerStatsRecorderImpl init
-INFO: Starting Pulsar producer perf with config: {
-  "topicName" : "jsonTopic-subscription-DLQ",
-  "producerName" : null,
-  "sendTimeoutMs" : 30000,
-  "blockIfQueueFull" : false,
-  "maxPendingMessages" : 1000,
-  "maxPendingMessagesAcrossPartitions" : 50000,
-  "messageRoutingMode" : "RoundRobinPartition",
-  "hashingScheme" : "JavaStringHash",
-  "cryptoFailureAction" : "FAIL",
-  "batchingMaxPublishDelayMicros" : 1000,
-  "batchingPartitionSwitchFrequencyByPublishDelay" : 10,
-  "batchingMaxMessages" : 1000,
-  "batchingMaxBytes" : 131072,
-  "batchingEnabled" : true,
-  "chunkingEnabled" : false,
-  "compressionType" : "NONE",
-  "initialSequenceId" : null,
-  "autoUpdatePartitions" : true,
-  "autoUpdatePartitionsIntervalSeconds" : 60,
-  "multiSchema" : true,
-  "properties" : { }
-}
-Apr 26, 2021 8:20:24 AM org.apache.pulsar.client.impl.ProducerStatsRecorderImpl init
-INFO: Pulsar client config: {
-  "serviceUrl" : "pulsar://localhost:6650",
-  "authPluginClassName" : null,
-  "operationTimeoutMs" : 30000,
-  "statsIntervalSeconds" : 60,
-  "numIoThreads" : 1,
-  "numListenerThreads" : 1,
-  "connectionsPerBroker" : 1,
-  "useTcpNoDelay" : true,
-  "useTls" : false,
-  "tlsTrustCertsFilePath" : "",
-  "tlsAllowInsecureConnection" : false,
-  "tlsHostnameVerificationEnable" : false,
-  "concurrentLookupRequest" : 5000,
-  "maxLookupRequest" : 50000,
-  "maxLookupRedirects" : 20,
-  "maxNumberOfRejectedRequestPerConnection" : 50,
-  "keepAliveIntervalSeconds" : 30,
-  "connectionTimeoutMs" : 10000,
-  "requestTimeoutMs" : 60000,
-  "initialBackoffIntervalNanos" : 100000000,
-  "maxBackoffIntervalNanos" : 60000000000,
-  "listenerName" : null,
-  "useKeyStoreTls" : false,
-  "sslProvider" : null,
-  "tlsTrustStoreType" : "JKS",
-  "tlsTrustStorePath" : null,
-  "tlsTrustStorePassword" : null,
-  "tlsCiphers" : [ ],
-  "tlsProtocols" : [ ],
-  "proxyServiceUrl" : null,
-  "proxyProtocol" : null,
-  "enableTransaction" : false
-}
-Apr 26, 2021 8:20:24 AM org.apache.pulsar.client.impl.ProducerImpl connectionOpened
-INFO: [jsonTopic-subscription-DLQ] [null] Creating producer on cnx [id: 0x7861b6d7, L:/127.0.0.1:43226 - R:localhost/127.0.0.1:6650]
-Apr 26, 2021 8:20:24 AM org.apache.pulsar.client.impl.ProducerImpl lambda$connectionOpened$16
-INFO: [jsonTopic-subscription-DLQ] [standalone-6-2] Created producer on cnx [id: 0x7861b6d7, L:/127.0.0.1:43226 - R:localhost/127.0.0.1:6650]
+Apr 27, 2021 12:21:26 PM org.apache.pulsar.client.impl.ProducerImpl connectionOpened
+INFO: [jsonTopic-subscription-DLQ] [null] Creating producer on cnx [id: 0xc8a31fea, L:/127.0.0.1:48418 - R:localhost/127.0.0.1:6650]
+Apr 27, 2021 12:21:26 PM org.apache.pulsar.client.impl.ProducerImpl lambda$connectionOpened$16
+INFO: [jsonTopic-subscription-DLQ] [standalone-2-6] Created producer on cnx [id: 0xc8a31fea, L:/127.0.0.1:48418 - R:localhost/127.0.0.1:6650]
+
+NO MORE LOGS
